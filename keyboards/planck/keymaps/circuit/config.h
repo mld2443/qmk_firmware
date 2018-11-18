@@ -1,7 +1,18 @@
-#ifndef CONFIG_USER_H
-#define CONFIG_USER_H
+#pragma once
 
-#include "../../config.h"
+// If Audio is enabled, here is where we will specify what audio to use.
+#ifdef AUDIO_ENABLE
+    #define STARTUP_SONG SONG(PLANCK_SOUND)
+    // #define STARTUP_SONG SONG(NO_SOUND)
+
+    #define DEFAULT_LAYER_SONGS { SONG(QWERTY_SOUND), \
+                                  SONG(DVORAK_SOUND), \
+                                  SONG(COLEMAK_SOUND) \
+                                }
+#endif
+
+// Not sure why nkro makefile setting is completely ignored.
+#define FORCE_NKRO
 
 /*
  * MIDI options
@@ -25,5 +36,3 @@
 
 /* override number of MIDI tone keycodes (each octave adds 12 keycodes and allocates 12 bytes) */
 //#define MIDI_TONE_KEYCODE_OCTAVES 2
-
-#endif
