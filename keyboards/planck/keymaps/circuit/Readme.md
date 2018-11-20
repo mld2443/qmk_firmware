@@ -38,7 +38,7 @@ I designed the number pad modelled after a traditional 108-key keyboard numpad. 
 ## Game lock:
 **TL;DR**: The game lock is on by default, disabling the `GUI` key (WINDOWS key).
 
-This is my primary keyboard, and I use it to play games. The windows key is a headache while gaming, and I rarely ever need to use it otherwise. Some cases do come up, and I intended for this layout to be usable for others, so maybe they might want it. Enabling the game lock overwrites the `SLASH` key. The reason for this is that rather than have a dedicated GUI button that's useless while the lock is engaged, there might as well be a button there. If the lock is disabled, the `SLASH` and `QUESTION` keys can still be found in the [UPPER] layer.
+This is my primary keyboard, and I use it to play games. The windows key is a headache while gaming, and I rarely ever need to use it otherwise. Some cases do come up, and I intended for this layout to be usable for others, so maybe they might want it. Enabling the `GUI` key overwrites the `SLASH` key. The reason for this is that rather than have a dedicated `GUI` button that's useless while the lock is engaged, there might as well be a button there. If the lock is disabled, the `SLASH` and `QUESTION` keys can still be found in the [UPPER] layer.
 
 ## Notes:
 * The Dvorak `Z` key is to the right of the `S` key instead of under it as part of a compromise I made to keep the ARROW keys available on the default layer.
