@@ -2,13 +2,32 @@
 
 // If Audio is enabled, here is where we will specify what audio to use.
 #ifdef AUDIO_ENABLE
-    #define STARTUP_SONG SONG(PLANCK_SOUND)
-    // #define STARTUP_SONG SONG(NO_SOUND)
+// My own little songs!
+#define GAME_LOCK_ON_SOUND \
+  SD_NOTE(_C6),            \
+  SD_NOTE(_D6),
 
-    #define DEFAULT_LAYER_SONGS { SONG(QWERTY_SOUND), \
-                                  SONG(DVORAK_SOUND), \
-                                  SONG(COLEMAK_SOUND) \
-                                }
+#define GAME_LOCK_OFF_SOUND \
+  SD_NOTE(_D6),             \
+  SD_NOTE(_C6),
+
+#define NUMPAD_ON_SOUND \
+  E__NOTE(_E5 ),        \
+  E__NOTE(_A5 ),        \
+  E__NOTE(_D6 ),        \
+  E__NOTE(_G6 ),
+
+#define NUMPAD_OFF_SOUND \
+  E__NOTE(_G6 ),         \
+  E__NOTE(_D6 ),         \
+  E__NOTE(_A5 ),         \
+  E__NOTE(_E5 ),
+
+  #define STARTUP_SONG SONG(PLANCK_SOUND)
+
+  #define DEFAULT_LAYER_SONGS { SONG(QWERTY_SOUND), \
+                                SONG(DVORAK_SOUND), \
+                              }
 #endif
 
 // Not sure why nkro makefile setting is completely ignored.
